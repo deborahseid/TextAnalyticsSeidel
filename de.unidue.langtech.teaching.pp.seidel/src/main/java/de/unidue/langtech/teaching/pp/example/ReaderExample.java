@@ -100,4 +100,6 @@ public class ReaderExample
     {
         return new Progress[] { new ProgressImpl(currentLine, lines.size(), "lines") };
     }
+    
+    
 }
