@@ -40,12 +40,18 @@ public class EvaluatorExample
         
         DetectedLanguage detected = JCasUtil.selectSingle(jcas, DetectedLanguage.class);
         GoldLanguage actual = JCasUtil.selectSingle(jcas, GoldLanguage.class);
-
+        
+       if(detected.getCoveredText().equals(actual.getCoveredText())){
+    	   correct++;
+       }
+       nrOfDocuments++;
+        
         System.out.println(actual.getLanguage() + " detected as " + detected.getLanguage());
         
         // FIXME: Keep track of correctly classified documents! 
     }
-
+/* 
+ */
 
     /* 
      * This is called AFTER all documents have been processed.
