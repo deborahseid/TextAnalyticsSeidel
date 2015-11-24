@@ -46,6 +46,15 @@ public class BaselineExample
         	
         	
         }
+        for(Token t : tokens){
+        	System.out.println(t.getCoveredText());
+        	String coveredText = t.getCoveredText().toLowerCase();
+        	if(coveredText.equals("je")){
+        		lang="FR";
+        	}
+        	
+        	
+        }
         
         System.out.println("CAS contains " + tokens.size() + " tokens.");
         
