@@ -22,6 +22,7 @@ public class NewAnnotationPipeline
                 AnalysisEngineFactory.createEngineDescription(BreakIteratorSegmenter.class),
                 AnalysisEngineFactory.createEngineDescription(BaselineExample.class),
                 AnalysisEngineFactory.createEngineDescription(LetterAnnotator.class),
+                AnalysisEngineFactory.createEngineDescription(AnnotatorExample.class),
                 AnalysisEngineFactory.createEngineDescription(Printer.class)
         );
     }

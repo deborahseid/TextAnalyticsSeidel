@@ -2,10 +2,12 @@ package de.unidue.langtech.teaching.pp.ownReaderTest;
 
 import static org.junit.Assert.*;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import org.apache.uima.collection.CollectionException;
 import org.apache.uima.collection.CollectionReaderDescription;
 import org.apache.uima.fit.factory.CollectionReaderFactory;
 import org.apache.uima.fit.pipeline.JCasIterable;
@@ -145,6 +147,10 @@ public class NewReaderTest
 
     }
 
+    
+   
+    
+    
     private String getText(List<Token> aTokens, int idx)
     {
         return aTokens.get(idx).getCoveredText();
@@ -191,4 +197,6 @@ public class NewReaderTest
                 NewReader.PARAM_INPUT_FILE, "src/test/resources/test/inputNewFormat.txt");
     }
 
+  
+    
 }
